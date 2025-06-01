@@ -1,0 +1,19 @@
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    #card {
+        width: 100px;
+        margin: 15px;
+        padding: 10px;
+    }
+
+    .gallery {
+      margin-bottom: 40px;
+      width: 100px
+    }
+
+    .gallery img {
+      margin: 5px;
+    }

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulaire d'inscription</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #28a745;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .radio-group {
+      margin-top: 5px;
+    }
+
+    .radio-group label {
+      font-weight: normal;
+      margin-right: 15px;
+    }
+
+    .button-group {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    button {
+      flex: 1;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button[type="reset"] {
+      background-color: #dc3545;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Fiche Inscription</h2>
+    <form action="#" method="post">
+      <label for="name">Nom complet :</label>
+      <input type="text" id="name" name="name" required>
+      <label for="name">Date de naissance :</label>
+      <input type="date" name="bday" required>
+      <label>Sexe :</label>
+      <div class="radio-group">
+        <label><input type="radio" name="gender" value="homme" required> Masculin</label>
+        <label><input type="radio" name="gender" value="femme"> Féminin</label>
+      </div>
+      <label for="name">Téléphone: </label>
+  <input type="tel" name="usrtel" required>
+
+      <label for="Nationalité">Nationalité :</label>
+      <select id="Nationalité" name="Nationalité" required>
+          <option value=""></option>
+          <option value="Camerounais">Camerounais</option>
+          <option value="Nigerian">Nigerian</option>
+          <option value="Tchadien">Tchadien</option>
+          <option value="Congolais">Congolais</option>
+          <option value="Gabonais">Gabonais</option>
+      </select>
+      
+      <label for="email">Adresse email :</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Mot de passe :</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="confirm-password">Confirmer le mot de passe :</label>
+      <input type="password" id="confirm-password" name="confirm-password" required>
+
+      <div class="button-group">
+        <button type="submit">S'inscrire</button>
+        <button type="reset">Annuler</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
